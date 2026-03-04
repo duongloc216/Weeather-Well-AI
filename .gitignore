@@ -1,0 +1,76 @@
+# ================================
+# ENVIRONMENT & SECRETS
+# ================================
+.env
+vite-project/.env
+
+# ================================
+# PYTHON
+# ================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+*.egg
+.eggs/
+*.whl
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ================================
+# ML MODELS (quá lớn cho GitHub)
+# ================================
+models/qwen2.5-3b-instruct-q4_k_m.gguf
+models/embedding_model/model.safetensors
+models/embedding_model/tokenizer.json
+models/.cache/
+models/xgboost_health_classifier.pkl
+
+# ================================
+# REDIS (binary distribution - không push)
+# ================================
+redis/
+
+# ================================
+# CHROMADB DATA (runtime data)
+# ================================
+chroma_data/
+
+# ================================
+# LARGE DATA FILES (>100MB)
+# ================================
+data/weather_balanced_2022_2024.csv
+data/weather_complete_2024.csv
+dev_phase/city.list.json
+dev_phase/corpus/
+
+# ================================
+# FRONTEND BUILD OUTPUT
+# ================================
+vite-project/dist/
+vite-project/node_modules/
+
+# ================================
+# IDE & OS
+# ================================
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ================================
+# JUPYTER NOTEBOOK CHECKPOINTS
+# ================================
+.ipynb_checkpoints/
+
+# ================================
+# MISC
+# ================================
+*.bak
+*.log
+*.tmp
